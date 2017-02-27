@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Clicker</title>
+	<style type="text/css">
+	body {
+		text-align: center;
+	}
+		img {
+			width: 300px;
+			transition: width 0.05s;
+			cursor: auto;
+		}
+		img:active {
+			width: 290px;
+		}
+	</style>
+</head>
+<body>
+  <img src="http://www.clipartkid.com/images/846/cute-cookie-png-clipart-cute-stuff-cookie-hUGkWB-clipart.png" onclick="addCookie()">
+  <h2 id="cookieDisplay">You have dose 0 cookies</h2>
+  <script type="text/javascript">
+    var cookies = 0;
+    var cookieDisplay = document.getElementById('cookieDisplay');
+
+    function addCookie() {
+      cookies++;
+      if (cookies == 1) {
+        cookieDisplay.innerHTML = "You have da " + cookies + " cookie";
+      } else {
+        cookieDisplay.innerHTML = "You have dose " + cookies + " cookies";
+      }
+    }
+  </script>
+</body>
+</html>
